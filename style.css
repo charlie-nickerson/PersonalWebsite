@@ -1,0 +1,65 @@
+/* style.css */
+body {
+    background-color: #585858; /* Replace #f2f2f2 with your desired background color */
+}
+nav {
+    background-color: #333; /* Background color for the navigation bar */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default bullet points from list items */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items horizontally */
+  }
+  
+  li {
+    margin: 0 10px; /* Add some spacing between menu items */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: white; /* Text color for menu items */
+    padding: 10px; /* Add padding around menu items */
+  }
+  
+  a:hover {
+    background-color: #555; /* Background color on hover */
+  }
+
+.banner {
+    background-color: #578380; /* Set the background color for the banner */
+    color: #fff; /* Set the text color for the banner */
+    padding: 20px; /* Add some padding to the banner content */
+    text-align: center; /* Center the content horizontally */
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #0b0a0a;
+  border-color: #000000 transparent #000000 transparent;
+  animation: lds-dual-ring 3s linear infinite;
+}
+
+.main-content {
+    display: none;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
