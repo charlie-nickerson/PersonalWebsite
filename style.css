@@ -1,6 +1,9 @@
 /* style.css */
 body {
-    background-color: #585858; /* Replace #f2f2f2 with your desired background color */
+  background-image: url("website-background-3.jpg");
+  background-size: cover; /* Adjust background sizing to cover the entire container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Keep the image fixed while scrolling */
 }
 nav {
     background-color: #333; /* Background color for the navigation bar */
@@ -32,34 +35,4 @@ nav {
     color: #fff; /* Set the text color for the banner */
     padding: 20px; /* Add some padding to the banner content */
     text-align: center; /* Center the content horizontally */
-}
-
-.lds-dual-ring {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #0b0a0a;
-  border-color: #000000 transparent #000000 transparent;
-  animation: lds-dual-ring 3s linear infinite;
-}
-
-.main-content {
-    display: none;
-}
-
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
