@@ -1,10 +1,4 @@
 /* style.css */
-body {
-  background-image: url("website-background-3.jpg");
-  background-size: cover; /* Adjust background sizing to cover the entire container */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-attachment: fixed; /* Keep the image fixed while scrolling */
-}
 nav {
     background-color: #333; /* Background color for the navigation bar */
   }
@@ -35,4 +29,73 @@ nav {
     color: #fff; /* Set the text color for the banner */
     padding: 20px; /* Add some padding to the banner content */
     text-align: center; /* Center the content horizontally */
+}
+
+ /* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+  /* make the video fit on the screnn */
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  align-items: flex-start; /* Align buttons to the left side */
+  gap: 20px;
+  margin-left: 465px; /* Adjust the margin for more space from the left edge */
+}
+
+.game-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-button:hover {
+  background-color: #0056b3;
 }
