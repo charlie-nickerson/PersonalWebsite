@@ -34,7 +34,7 @@ nav {
  /* Style the video: 100% width and height to cover the entire window */
  #myVideo {
   /* make the video fit on the screnn */
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
@@ -53,49 +53,37 @@ nav {
   padding: 20px;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-} 
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
   height: 100vh;
-  margin: 0;
+  margin: 0
 }
 
 .button-container {
   display: flex;
   flex-direction: column; /* Align buttons vertically */
-  align-items: flex-start; /* Align buttons to the left side */
+  align-items: first baseline; /* Align buttons to the left side */
   gap: 20px;
-  margin-left: 465px; /* Adjust the margin for more space from the left edge */
+  margin-left: 0; /* Adjust the margin for more space from the left edge */
+  margin-bottom: 20px; /* Adjust the margin for more space from the bottom edge */
 }
 
-.game-button {
+.menu-button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: transparent;
+  color: palevioletred;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+
+  font-size: larger;
 }
 
-.game-button:hover {
-  background-color: #0056b3;
+.menu-button:hover {
+  background-color: turquoise
 }
