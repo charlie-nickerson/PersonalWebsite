@@ -1,0 +1,105 @@
+/* style.css */
+nav {
+    background-color: #333; /* Background color for the navigation bar */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default bullet points from list items */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items horizontally */
+  }
+  
+  li {
+    margin: 0 10px; /* Add some spacing between menu items */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: white; /* Text color for menu items */
+    padding: 10px; /* Add padding around menu items */
+  }
+  
+  a:hover {
+    background-color: #555; /* Background color on hover */
+  }
+
+.banner {
+    background-color: #578380; /* Set the background color for the banner */
+    color: #fff; /* Set the text color for the banner */
+    padding: 20px; /* Add some padding to the banner content */
+    text-align: center; /* Center the content horizontally */
+}
+
+ /* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+  /* make the video fit on the screnn */
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
+  height: 100vh;
+  margin: 0
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  align-items: first baseline; /* Align buttons to the left side */
+  gap: 20px;
+  margin-left: 0; /* Adjust the margin for more space from the left edge */
+  margin-bottom: 20px; /* Adjust the margin for more space from the bottom edge */
+}
+
+.menu-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: palevioletred;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  font-size: larger;
+}
+
+.menu-button:hover {
+  background-color: turquoise
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
