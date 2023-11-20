@@ -55,7 +55,6 @@ nav {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   display: flex;
   align-items: flex-start; /* Align items to the top */
   justify-content: flex-start; /* Align items to the left */
@@ -65,9 +64,11 @@ body {
 
 .button-container {
   display: flex;
+  background-color: #f0f0f0;
   flex-direction: column; /* Align buttons vertically */
   align-items: first baseline; /* Align buttons to the left side */
   gap: 20px;
+  height: 100vh;
   margin-left: 0; /* Adjust the margin for more space from the left edge */
   margin-bottom: 20px; /* Adjust the margin for more space from the bottom edge */
 }
